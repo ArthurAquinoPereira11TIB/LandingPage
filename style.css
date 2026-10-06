@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0f12;
+    color: #e5e7eb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    border-bottom: 1px solid #1f2937;
+    background-color: #0d0f12;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: #f39c12;
+}
+
+.nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #f39c12;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 8% 60px 8%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-sub {
+    color: #f39c12;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: #ffffff;
+    letter-spacing: -1px;
+}
+
+.hero-desc {
+    color: #9ca3af;
+    max-width: 680px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+}
+
+/* PRIMEIRA IMAGEM NÍTIDA E CONTROLADA */
+.hero-image-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #1f2937;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* ESTRUTURA GERAL DAS SEÇÕES */
+.section-tag {
+    color: #f39c12;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section-header {
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 16px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+/* CAVAQUINHO COM ANIMAÇÃO */
+.cavaquinho-section {
+    padding: 80px 8%;
+    background-color: #12151a;
+    border-top: 1px solid #1f2937;
+    border-bottom: 1px solid #1f2937;
+}
+
+.cavaquinho-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.cavaquinho-media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cavaquinho-media img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 4px;
+    animation: balanco 2s ease-in-out infinite alternate;
+}
+
+@keyframes balanco {
+    0% {
+        transform: rotate(-6deg) translateY(0px);
+    }
+    50% {
+        transform: rotate(0deg) translateY(-8px);
+    }
+    100% {
+        transform: rotate(6deg) translateY(0px);
+    }
+}
+
+.cavaquinho-content {
+    flex: 1;
+}
+
+.cavaquinho-content h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.cavaquinho-content p {
+    color: #9ca3af;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.stats-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #1f2937;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #f39c12;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #6b7280;
+    text-transform: uppercase;
+}
+
+/* INTEGRANTES (ALINHADOS NO CANTO ESQUERDO) */
+.integrantes-section {
+    padding: 80px 8%;
+}
+
+.integrante-item {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid #1f2937;
+}
+
+.integrante-foto {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+}
+
+.integrante-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #1f2937;
+}
+
+.integrante-info h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.integrante-funcao {
+    color: #f39c12;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.integrante-info p {
+    color: #9ca3af;
+    max-width: 700px;
+}
+
+/* DISCOGRAFIA (ALINHADOS NO CANTO ESQUERDO IGUAL AOS INTEGRANTES) */
+.discografia-section {
+    padding: 80px 8%;
+    background-color: #12151a;
+    border-top: 1px solid #1f2937;
+    border-bottom: 1px solid #1f2937;
+}
+
+.album-item {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #1f2937;
+}
+
+.album-capa {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #1f2937;
+    flex-shrink: 0;
+}
+
+.album-detalhes {
+    flex: 1;
+}
+
+.album-ano {
+    color: #f39c12;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.album-detalhes h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.album-detalhes p {
+    color: #9ca3af;
+    margin-bottom: 12px;
+}
+
+.album-meta span {
+    display: inline-block;
+    background-color: #1f2937;
+    color: #d1d5db;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-right: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* SHOWS */
+.shows-section {
+    padding: 80px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.show-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #1f2937;
+}
+
+.show-data {
+    font-weight: 900;
+    color: #f39c12;
+    width: 100px;
+    font-size: 1.1rem;
+}
+
+.show-cidade {
+    color: #ffffff;
+    font-weight: 700;
+    width: 250px;
+}
+
+.show-local {
+    color: #9ca3af;
+    flex: 1;
+}
+
+.show-btn {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #f39c12;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.show-btn:hover {
+    background-color: #f39c12;
+    color: #0d0f12;
+}
+
+/* CONTATO */
+.contato-section {
+    padding: 80px 8%;
+    background-color: #12151a;
+    border-top: 1px solid #1f2937;
+}
+
+.contato-box {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contato-box h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.contato-box p {
+    color: #9ca3af;
+    margin-bottom: 30px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 14px;
+    background-color: #0d0f12;
+    border: 1px solid #1f2937;
+    color: #ffffff;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    outline: none;
+    border-color: #f39c12;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #f39c12;
+    border: none;
+    color: #0d0f12;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+/* FOOTER */
+.footer {
+    padding: 30px 8%;
+    text-align: center;
+    border-top: 1px solid #1f2937;
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav a {
+        margin: 0 10px;
+    }
+
+    .cavaquinho-layout {
+        flex-direction: column;
+    }
+
+    .integrante-item,
+    .album-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .show-linha {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .show-data, .show-cidade {
+        width: 100%;
+    }
+}
